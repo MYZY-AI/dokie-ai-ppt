@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Start from Scratch (Part 1)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Yellow Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/f6/546f06a2ba.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#000000] bg-white px-3 py-1 rounded-full shadow-md">How to Start</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-[#000000]" data-zone="page-number">06</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="40"><span class="brand-font">Start from Scratch</span> (Part 1)</h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="60">See how to create a presentation from scratch with <span class="brand-font">Dokie</span></p>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center gap-10">
+                    <div class="w-[360px] flex-shrink-0 flex flex-col justify-center gap-8" data-zone="bullet-list" data-max-items="3">
+                        <!-- Step 1 -->
+                        <div class="flex items-start gap-3" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">1</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="25">Enter Your Topic</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">Tell Dokie what you want to present</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex items-start gap-3" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">2</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="25">Pick a Theme</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">Review details and choose a design style</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex items-start gap-3" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">3</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="25">Review & Generate</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">Check the outline, then let <span class="brand-font">Dokie</span> build your slides</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 relative flex items-center justify-center h-[480px]">
+                        <!-- Screenshot 1 -->
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-2xl shadow-lg border border-[#E0E0E0] overflow-hidden inline-block z-[1]">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/3b/5e95ec8802.png" alt="Review Generate" class="block w-auto h-auto max-w-[280px] max-h-[390px]">
+                        </div>
+                        <!-- Screenshot 2 -->
+                        <div class="absolute bg-white rounded-2xl shadow-xl border border-[#E0E0E0] overflow-hidden inline-block z-[2] left-[240px] top-1/2 -translate-y-1/2 -rotate-2">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/21/19ccdcae4b.png" alt="Pick Theme" class="block w-auto h-auto max-w-[640px] max-h-[460px]">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

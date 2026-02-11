@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Program Matrix</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="slide-container w-[1280px] h-[720px] overflow-hidden relative aspect-[16/9] flex flex-col bg-[#1a1a1a]">
+        <div class="relative z-10 flex flex-col flex-grow px-[45px] py-[45px]">
+            <!-- Main Content -->
+            <main class="relative flex-grow flex flex-col">
+                <div class="flex flex-col h-full w-full gap-4">
+                    <!-- Chart Container -->
+                    <div class="flex-grow relative bg-black rounded-lg p-8">
+                        <div class="relative w-full h-full">
+                            <!-- Axis Label: Vertical (Left) -->
+                            <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3">
+                                <div class="flex flex-col items-center gap-2">
+                                    <span class="text-xs text-white uppercase tracking-wider">Full-Stack</span>
+                                    <div class="w-px h-24 bg-gray-700"></div>
+                                    <span class="text-xs text-white uppercase tracking-wider">Combined</span>
+                                    <div class="w-px h-24 bg-gray-700"></div>
+                                    <span class="text-xs text-white uppercase tracking-wider">Single</span>
+                                </div>
+                            </div>
+                            <!-- Axis Label: Horizontal (Bottom) -->
+                            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-6">
+                                <div class="flex items-center gap-16">
+                                    <span class="text-xs text-white uppercase tracking-wider">Foundation</span>
+                                    <span class="text-xs text-white uppercase tracking-wider">Advanced</span>
+                                    <span class="text-xs text-white uppercase tracking-wider">Sprint</span>
+                                </div>
+                            </div>
+                            <!-- Axis Label: Vertical (Right) -->
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3">
+                                <div class="transform -rotate-90 origin-center whitespace-nowrap">
+                                    <span class="text-xs text-white uppercase tracking-widest">Program Matrix</span>
+                                </div>
+                            </div>
+                            <!-- Decorative Element: Grid Lines -->
+                            <svg class="absolute inset-0 w-full h-full" style="padding: 30px 50px 40px 40px;">
+                                <!-- Horizontal lines -->
+                                <line x1="0" y1="33%" x2="100%" y2="33%" stroke="#333333" stroke-width="1"/>
+                                <line x1="0" y1="66%" x2="100%" y2="66%" stroke="#333333" stroke-width="1"/>
+                                <!-- Vertical lines -->
+                                <line x1="33%" y1="0" x2="33%" y2="100%" stroke="#333333" stroke-width="1"/>
+                                <line x1="66%" y1="0" x2="66%" y2="100%" stroke="#333333" stroke-width="1"/>
+                            </svg>
+                            <!-- Data Visualization: Program Bubbles -->
+                            <div class="absolute inset-0" style="padding: 30px 50px 40px 40px;">
+                                <!-- Program Indicator 1 -->
+                                <div class="absolute" style="left: 18%; top: 20%;">
+                                    <div class="w-24 h-24 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 100px; height: 60px; margin-left: 48px; margin-top: -30px;">
+                                        <line x1="0" y1="30" x2="60" y2="30" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 160px; top: 38px;">DISCOVER LAB</div>
+                                </div>
+                                <!-- Program Indicator 2 -->
+                                <div class="absolute" style="left: 22%; top: 38%;">
+                                    <div class="w-20 h-20 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 90px; height: 50px; margin-left: 40px; margin-top: -25px;">
+                                        <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 130px; top: 28px;">SKILL STUDIO</div>
+                                </div>
+                                <!-- Program Indicator 3 -->
+                                <div class="absolute" style="left: 28%; top: 48%;">
+                                    <div class="w-16 h-16 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 80px; height: 40px; margin-left: 32px; margin-top: -20px;">
+                                        <line x1="0" y1="20" x2="40" y2="20" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 110px; top: 20px;">TOOLS LAB</div>
+                                </div>
+                                <!-- Program Indicator 4 -->
+                                <div class="absolute" style="left: 15%; top: 68%;">
+                                    <div class="w-14 h-14 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 80px; height: 35px; margin-left: 28px; margin-top: -18px;">
+                                        <line x1="0" y1="18" x2="40" y2="18" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 110px; top: 16px;">BRIDGE STUDIO</div>
+                                </div>
+                                <!-- Program Indicator 5 -->
+                                <div class="absolute" style="left: 68%; top: 32%;">
+                                    <div class="w-32 h-32 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 120px; height: 70px; margin-left: 64px; margin-top: -35px;">
+                                        <line x1="0" y1="35" x2="80" y2="35" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 200px; top: 50px;">CORE PORTFOLIO</div>
+                                </div>
+                                <!-- Program Indicator 6 -->
+                                <div class="absolute" style="left: 72%; top: 52%;">
+                                    <div class="w-22 h-22 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 100px; height: 50px; margin-left: 44px; margin-top: -25px;">
+                                        <line x1="0" y1="25" x2="60" y2="25" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 145px; top: 32px;">INTENSIVE LAB</div>
+                                </div>
+                                <!-- Program Indicator 7 -->
+                                <div class="absolute" style="left: 75%; top: 68%;">
+                                    <div class="w-20 h-20 rounded-full bg-[#d4af37] opacity-70"></div>
+                                    <svg class="absolute" style="left: 50%; top: 50%; width: 95px; height: 45px; margin-left: 40px; margin-top: -23px;">
+                                        <line x1="0" y1="23" x2="55" y2="23" stroke="white" stroke-width="1"/>
+                                    </svg>
+                                    <div class="absolute whitespace-nowrap text-white text-sm font-medium" style="left: 135px; top: 28px;">CAPSTONE HUB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Key Insight Card -->
+                    <div class="flex-shrink-0 bg-[#2a2a2a] rounded-lg p-4">
+                        <div class="flex items-start gap-3">
+                            <!-- Decorative Element: Icon -->
+                            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-[#d4af37]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <!-- Title -->
+                                <h3 class="text-base font-bold text-white mb-1">Course Line</h3>
+                                <!-- Description -->
+                                <p class="text-xs text-gray-300 leading-relaxed">
+                                    LUMINA maintains a focused program portfolio, centering on portfolio studios while extending into foundation labs and capstone coaching, expanding its student reach while preserving a consistent 4D teaching framework.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer class="flex-shrink-0 flex items-center justify-between pt-[30px]">
+                <!-- Presentation Title -->
+                <div id="footer" class="text-[11px] font-medium leading-[1.4] opacity-80 text-white">LUMINA ART ACADEMY / Program Matrix</div>
+                <!-- Brand Badge -->
+                <div class="w-[45px] h-[45px]">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="#ffffff" stroke-width="5" fill="none"/>
+                        <path d="M50,25 Q75,50 50,75 Q25,50 50,25" fill="#ffffff"/>
+                    </svg>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

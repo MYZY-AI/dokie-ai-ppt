@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Thank You</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+        .brand-font-bold {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#2388FF]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#2388FF]">
+        
+        <!-- Decorative Element: Background Pattern (Full Viewport) -->
+        <div class="absolute inset-0" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10299/project_5100/ea/23962c7b44.png" alt="" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Decorative Element: Accent Shape (Right Center) -->
+        <div class="absolute z-10 left-[839px] top-[255px] w-[300px] h-[300px]">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10299/project_5100/34/d08ab8fdae.svg" alt="" class="w-full h-full object-contain">
+        </div>
+        
+        <!-- Content -->
+        <div class="absolute inset-0 flex items-center z-10 pl-[calc(50%-180px-300px)]" data-role="content">
+            <!-- Main Content -->
+            <div class="text-left">
+                <!-- Title -->
+                <h1 class="font-bold text-[#000000] tracking-tight mb-5 text-[120px] leading-[0.9]" data-zone="title" data-max-chars="20">
+                    Thank You
+                </h1>
+                <!-- Call to Action -->
+                <p class="text-2xl text-[#000000] leading-relaxed" data-zone="body" data-max-chars="40">
+                    <span class="brand-font font-bold">Start building with Dokie today!</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Discord Link - Left aligned with Thank You title -->
+        <div class="absolute bottom-[120px] z-20 left-[calc(50%-180px-300px)]">
+            <a href="https://discord.gg/q2ZcfZpKE6" target="_blank" class="inline-flex items-center gap-4 bg-[#E8EEFF] rounded-full pl-4 pr-8 py-4 shadow-md hover:shadow-lg transition-all cursor-pointer hover:bg-[#D5DDFF] group">
+                <div class="w-12 h-12 bg-[#5865F2] rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fab fa-discord text-2xl text-white"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-sm text-[#666666]">Need help?</p>
+                    <p class="text-lg font-semibold text-[#000000] flex items-center gap-2">
+                        Join our Discord
+                        <i class="fas fa-chevron-right text-[#5865F2] text-sm group-hover:translate-x-1 transition-transform"></i>
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>

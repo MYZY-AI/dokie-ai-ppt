@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>What is Dokie</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Blue Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/ec/35ffb74058.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#2388FF] bg-white px-3 py-1 rounded-full shadow-md">What is Dokie</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">02</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="30">What is <span class="brand-font">Dokie</span></h1>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center gap-10">
+                    <div class="flex-1 flex flex-col justify-center space-y-4" data-zone="body" data-max-chars="300">
+                        <p class="text-2xl text-[#333333] leading-relaxed">
+                            <span class="brand-font">Dokie</span> is <span class="brand-font font-bold text-[#2388FF]">Your AI Presentation Assistant&nbsp;</span>— building professional slides in minutes.
+                        </p>
+                        <p class="text-2xl text-[#333333] leading-relaxed">
+                            No messy layouts. No formatting issues. No endless editing.
+                        </p>
+                        <p class="text-2xl text-[#333333] leading-relaxed">
+                            Presentations, reports, school projects — you name it.
+                        </p>
+                        <div class="pt-4">
+                            <p class="text-3xl font-semibold text-[#2388FF]"><span class="brand-font">Okie Dokie!</span></p>
+                        </div>
+                    </div>
+                    <div class="w-[450px] flex-shrink-0 flex items-center justify-center">
+                        <!-- Chart Image -->
+                        <div class="w-full bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-8 flex items-center justify-center min-h-[280px]">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4102/1b/97cebb5706.png" alt="Dokie Product" class="w-full h-auto object-contain max-h-[260px]">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

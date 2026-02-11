@@ -1,0 +1,94 @@
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta content="width=1280, initial-scale=1.0" name="viewport">
+    <title>2025 SynergyCloud Pre-A Funding Pitch Deck - Left Title Toc List Table</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        .font-outfit {
+            font-family: Outfit, 'PingFang SC', sans-serif;
+        }
+
+        .font-inter {
+            font-family: Inter, 'PingFang SC', sans-serif;
+        }
+
+        .toc-list {
+            counter-reset: toc-counter;
+        }
+
+        .toc-list li::before {
+            counter-increment: toc-counter;
+            content: counter(toc-counter, decimal-leading-zero);
+            position: relative;
+            top: -5px;
+            color: #475afe;
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: bold;
+            font-family: Outfit, 'PingFang SC', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-[#F3F5F7] font-inter">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#f3f5f7]">
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none z-0">
+            <!-- 底部装饰线 -->
+            <div class="absolute bottom-[22px] left-0 w-full h-1 bg-[#dcdadb]/20"></div>
+        </div>
+
+        <!-- 内容容器 -->
+        <div class="relative z-10 flex flex-col w-full h-full p-[60px]">
+
+            <!-- 主内容区域 -->
+            <main class="flex items-center flex-1 max-h-full">
+
+                <!-- 左侧标题区域 -->
+                <header class="flex flex-col gap-2 w-[292px] flex-shrink-0">
+                    <!-- CONTENTS 标签 -->
+                    <p class="text-[#475afe] text-xl font-black font-outfit tracking-[2px]">
+                        CONTENTS
+                    </p>
+
+                    <!-- 主标题 -->
+                    <h1 class="pb-2 text-[#292f3b] text-[64px] font-semibold font-outfit leading-tight">
+                        Table of Contents
+                    </h1>
+
+                    <!-- 装饰线 -->
+                    <div class="w-16 h-1 bg-[#475afe]"></div>
+                </header>
+
+                <!-- 右侧目录列表 -->
+                <nav class="flex-1 flex max-h-full pl-[130px]">
+                    <ol class="toc-list flex flex-col gap-10">
+                        <li class="flex gap-4 py-2 text-[#333] text-2xl font-light leading-tight">Overview of Top
+                            Abstract: Market Opportunity &amp; Our Solution</li>
+                        <li class="flex gap-4 py-2 text-[#333] text-2xl font-light leading-tight">Top Brand Analysis:
+                            Product &amp; Data: Validating Our Core Value</li>
+                        <li class="flex gap-4 py-2 text-[#333] text-2xl font-light leading-tight">Leading Brands
+                            Growth &amp; Finance: The Path to Profitability</li>
+                        <li class="flex gap-4 py-2 text-[#333] text-2xl font-light leading-tight">Brand Comparison:
+                            Funding Plan: Fueling Our Growth Engine.</li>
+                        <li class="flex gap-4 py-2 text-[#333] text-2xl font-light leading-tight">Market Leaders:
+                            Vision: Defining the Future of Work</li>
+                    </ol>
+                </nav>
+            </main>
+
+            <!-- 页脚 -->
+            <footer class="flex justify-between items-center pt-[17px] w-full">
+                <p id="footer" class="text-gray-400 text-base font-light font-outfit">
+                    SynergyCloud Pre-A Funding Pitch Deck
+                </p>
+                <!-- 页码 -->
+                <p id="page-number" class="text-gray-400 text-base font-light font-outfit">2</p>
+            </footer>
+
+        </div>
+    </div>
+
+
+</body></html>

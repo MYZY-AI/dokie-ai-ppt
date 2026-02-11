@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Dokie Product Introduction</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+        .brand-font-bold {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+        .rotate-minus-20 {
+            transform: rotate(-20deg) !important;
+            -webkit-transform: rotate(-20deg) !important;
+            -moz-transform: rotate(-20deg) !important;
+            -ms-transform: rotate(-20deg) !important;
+            -o-transform: rotate(-20deg) !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#FAF9D5]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#FAF9D5]">
+        
+        <!-- Decorative Element: Background Pattern (Full Viewport) -->
+        <div class="absolute inset-0" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/04/f410f98a6e.svg" alt="" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex-grow flex flex-col justify-center px-[100px] py-[80px] translate-y-5" data-role="content">
+            <!-- Main Content -->
+            <div class="relative max-w-[1080px]">
+                <!-- Header -->
+                <div class="flex items-center gap-6">
+                    <!-- Title Section -->
+                    <div class="flex flex-col relative">
+                        <!-- Subtitle -->
+                        <p class="brand-font-bold text-4xl text-white mb-4" data-zone="subtitle" data-max-chars="20">Tutorial</p>
+                        
+                        <!-- Title -->
+                        <h1 class="font-bold text-white tracking-tight text-[160px] leading-[0.9]" data-zone="title" data-max-chars="40">
+                            Take a tour
+                        </h1>
+                    </div>
+                    
+                    <!-- Decorative Element: Arrow Icon (Top Right) -->
+                    <div class="flex-shrink-0 w-[550px] h-[550px] flex items-center justify-center">
+                        <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10051/project_0/36/04742de3d8.svg" alt="Arrow" class="w-[380px] h-[380px] block">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Badge: Update logo image URL and brand name text to match your content -->
+        <div class="absolute flex items-center justify-center gap-3 px-5 w-[180px] h-[70px] top-[200px] right-[100px] bg-white rounded-[35px] z-10" data-zone="brand-badge">
+            <!-- Brand Logo: Replace with appropriate logo image -->
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10299/project_5100/27/4234360997.svg" alt="Brand Logo" class="w-[45px] h-[45px]" data-role="logo">
+            <!-- Brand Name: Replace "Dokie" with actual brand name -->
+            <span class="text-[35px] font-semibold text-[#333]" data-zone="brand-name" data-max-chars="10">Dokie</span>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-[120px] right-[100px] text-white text-xl text-right z-20 brand-font" data-zone="footer-text" data-max-chars="40">
+            <!-- Presentation Title -->
+            <div>October 2025</div>
+            <div>dokie team</div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

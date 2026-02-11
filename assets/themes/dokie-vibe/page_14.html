@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Export and Share</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Gray Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/ce/81413a913c.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#9CA3AF] bg-white px-3 py-1 rounded-full shadow-md">Export & Share</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">13</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px] inline-block" data-zone="title" data-max-chars="30"><span class="brand-font">Export</span> and <span class="brand-font">Share</span></h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="60">After editing, you can present content in <span class="brand-font">multiple ways</span></p>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col items-center justify-center min-h-0">
+                <div class="px-14 w-full grid grid-cols-3 gap-8" data-zone="bullet-list" data-max-items="3">
+                    <!-- Method 1 -->
+                    <div class="text-center" data-zone="bullet-item">
+                        <div class="w-24 h-24 bg-[#E3F2FF] rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fas fa-link text-4xl text-[#2388FF]"></i>
+                        </div>
+                        <!-- Title -->
+                        <h3 class="text-2xl font-semibold text-[#000000] mb-3" data-max-chars="20">Share Link</h3>
+                        <!-- Description -->
+                        <p class="text-lg text-[#666666] leading-relaxed" data-max-chars="40">Switch to public and share immediately</p>
+                    </div>
+                    <!-- Method 2 -->
+                    <div class="text-center" data-zone="bullet-item">
+                        <div class="w-24 h-24 bg-[#E3F2FF] rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fas fa-file-pdf text-4xl text-[#2388FF]"></i>
+                        </div>
+                        <!-- Title -->
+                        <h3 class="text-2xl font-semibold text-[#000000] mb-3" data-max-chars="20">Export PDF</h3>
+                        <!-- Description -->
+                        <p class="text-lg text-[#666666] leading-relaxed" data-max-chars="40">Download for offline use</p>
+                    </div>
+                    <!-- Method 3 -->
+                    <div class="text-center" data-zone="bullet-item">
+                        <div class="w-24 h-24 bg-[#E3F2FF] rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fas fa-desktop text-4xl text-[#2388FF]"></i>
+                        </div>
+                        <!-- Title -->
+                        <h3 class="text-2xl font-semibold text-[#000000] mb-3" data-max-chars="20">Direct Presentation</h3>
+                        <!-- Description -->
+                        <p class="text-lg text-[#666666] leading-relaxed" data-max-chars="40">Slides are ready to go</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

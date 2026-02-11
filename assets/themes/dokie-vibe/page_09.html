@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Chat Editing: Layout Changes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Purple Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/1c/92c943b2b2.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#9A5EFF] bg-white px-3 py-1 rounded-full shadow-md">Chat Editing</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">08</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Main Content -->
+            <main class="flex-grow flex gap-10 min-h-0">
+                <div class="w-1/2 flex flex-col">
+                    <!-- Header -->
+                    <div class="flex-shrink-0 pb-6">
+                        <!-- Title -->
+                        <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="30">
+                            <span class="brand-font">Chat Editing</span>:<br>Layout Changes
+                        </h1>
+                    </div>
+                    <div class="flex flex-col items-start justify-start pt-16">
+                        <div class="w-4/5" data-zone="body" data-max-chars="50">
+                            <p class="text-xl font-semibold text-[#000000] brand-font mb-4">Example Prompt:</p>
+                            <div class="bg-[#E3F2FF] rounded-2xl p-5 shadow-md border border-[#2388FF]/20">
+                                <h3 class="text-2xl font-medium text-[#000000] leading-tight">
+                                    "Change this slide to<br>a two-column layout"
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 flex flex-col gap-5 justify-center">
+                    <!-- Before/After Comparison -->
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-[#2388FF] font-semibold w-20 flex-shrink-0">Before</p>
+                        <!-- Before Layout -->
+                        <div class="flex-1 h-[200px] bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6">
+                            <div class="h-full flex flex-col gap-3">
+                                <div class="space-y-2.5">
+                                    <div class="h-3 bg-[#CCCCCC] rounded w-2/5"></div>
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-11/12"></div>
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                </div>
+                                <div class="space-y-2.5">
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-4/5"></div>
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-5/6"></div>
+                                    <div class="h-3 bg-[#DDDDDD] rounded w-3/4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Transformation Indicator -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-20 flex-shrink-0"></div>
+                        <div class="flex-1 flex justify-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-[#2388FF] to-[#1a6fd9] rounded-full flex items-center justify-center shadow-md">
+                                <span class="text-xl text-white font-bold">↓</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-[#2388FF] font-semibold w-20 flex-shrink-0">After</p>
+                        <!-- After Layout -->
+                        <div class="flex-1 h-[200px] bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6">
+                            <div class="h-full flex gap-3">
+                                <div class="flex-1 flex flex-col gap-3">
+                                    <div class="space-y-2.5">
+                                        <div class="h-3 bg-[#CCCCCC] rounded w-3/5"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-11/12"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                    </div>
+                                    <div class="space-y-2.5">
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-5/6"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-4/5"></div>
+                                    </div>
+                                </div>
+                                <div class="w-0.5 bg-[#E0E0E0]"></div>
+                                <div class="flex-1 flex flex-col gap-3">
+                                    <div class="space-y-2.5">
+                                        <div class="h-3 bg-[#CCCCCC] rounded w-3/5"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-11/12"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-full"></div>
+                                    </div>
+                                    <div class="space-y-2.5">
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-5/6"></div>
+                                        <div class="h-3 bg-[#DDDDDD] rounded w-4/5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

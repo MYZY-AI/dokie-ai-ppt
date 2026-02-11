@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>AI Learns From Your Feedback</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Purple Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/1c/92c943b2b2.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#9A5EFF] bg-white px-3 py-1 rounded-full shadow-md">Chat Editing</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">11</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="40"><span class="brand-font">AI</span> Learns From Your Feedback</h1>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0" data-zone="body" data-max-chars="300">
+                <div class="flex flex-col gap-5">
+                    <!-- Challenge Card -->
+                    <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6">
+                        <div class="flex gap-6">
+                            <div class="flex items-center gap-3 w-[280px] flex-shrink-0">
+                                <div class="w-10 h-10 bg-[#FFE5E5] rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-lightbulb text-lg text-[#FF6B6B]"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-[#000000]">What <span class="brand-font">AI</span> Might Miss</h3>
+                            </div>
+                            <div class="flex-1 grid grid-cols-2 gap-x-8 gap-y-4" data-zone="bullet-list" data-max-items="4">
+                                <!-- Limitation 1 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Understanding nuances</p>
+                                </div>
+                                <!-- Limitation 2 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Technical accuracy</p>
+                                </div>
+                                <!-- Limitation 3 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Edge case handling</p>
+                                </div>
+                                <!-- Limitation 4 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Style consistency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solution Card -->
+                    <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6">
+                        <div class="flex gap-6">
+                            <div class="flex items-center gap-3 w-[280px] flex-shrink-0">
+                                <div class="w-10 h-10 bg-[#E3F2FF] rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-user-check text-lg text-[#2388FF]"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-[#000000]">Your Role: Guide & Refine</h3>
+                            </div>
+                            <div class="flex-1 grid grid-cols-2 gap-x-8 gap-y-4" data-zone="bullet-list" data-max-items="4">
+                                <!-- Action 1 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#2388FF] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Point out what's wrong</p>
+                                </div>
+                                <!-- Action 2 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#2388FF] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Show what you want</p>
+                                </div>
+                                <!-- Action 3 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#2388FF] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Provide examples</p>
+                                </div>
+                                <!-- Action 4 -->
+                                <div class="flex items-start gap-2" data-zone="bullet-item">
+                                    <div class="w-2 h-2 bg-[#2388FF] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="20">Keep refining</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Key Insight -->
+                    <div class="text-center">
+                        <p class="text-lg text-[#2388FF] font-semibold italic brand-font" data-max-chars="60">
+                            Every interaction makes your presentation better.
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

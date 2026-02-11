@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Custom Theme Upload</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Green Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/83/fbafe145fc.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#0FB981] bg-white px-3 py-1 rounded-full shadow-md">Core Advantages</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">04</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="30"><span class="brand-font">Custom Theme</span> Upload</h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="50">Upload your own theme to match your brand style</p>
+            </header>
+            
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center gap-10">
+                    <!-- Process Steps -->
+                    <div class="w-[480px] flex-shrink-0 flex flex-col justify-center gap-5" data-zone="bullet-list" data-max-items="4">
+                        <!-- Step 1 -->
+                        <div class="flex items-start gap-4" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">1</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="30">Open Theme Selection</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="50">Go to <span class="font-semibold">Custom Theme</span> tab</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex items-start gap-4" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">2</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="30">Click Upload Button</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="50">Select the upload button to choose your file</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="flex items-start gap-4" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">3</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="30">Upload Your File</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="50">Supports <span class="font-semibold">PPT, PDF, PPTX</span> • Max 50MB</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="flex items-start gap-4" data-zone="bullet-item">
+                            <div class="w-10 h-10 flex-shrink-0 bg-[#2388FF] rounded-full flex items-center justify-center">
+                                <span class="text-lg font-bold text-white">4</span>
+                            </div>
+                            <div>
+                                <!-- Title -->
+                                <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="30">Generate with Your Style</h3>
+                                <!-- Description -->
+                                <p class="text-base text-[#666666] leading-relaxed" data-max-chars="50"><span class="brand-font">Dokie</span> applies your theme style to all slides</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Screenshot -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-4 inline-block">
+                            <div class="w-[560px] h-[388px] rounded-lg overflow-hidden flex items-center justify-center">
+                                <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/30/512f36fa1f.png" alt="Custom Theme Upload" class="w-full h-full object-cover block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+    </div>
+</body>
+</html>

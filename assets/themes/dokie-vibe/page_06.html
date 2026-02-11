@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Three Ways to Create Presentations</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Yellow Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/f6/546f06a2ba.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#000000] bg-white px-3 py-1 rounded-full shadow-md">How to Start</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-[#000000]" data-zone="page-number">05</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="30"><span class="brand-font">3 Ways</span> to Create</h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="60">Pick the way that fits your workflow — Dokie adapts to you.</p>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col items-center justify-center min-h-0">
+                <div class="px-7.5 w-full grid grid-cols-3 gap-6" data-zone="bullet-list" data-max-items="3">
+                    <!-- Method Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] overflow-hidden" data-zone="bullet-item">
+                        <div class="w-full overflow-hidden min-h-[180px]">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/0f/a9f3d174e4.png" alt="Start from Scratch" class="w-full h-auto object-contain block">
+                        </div>
+                        <div class="p-5">
+                            <!-- Title -->
+                            <h3 class="text-2xl font-semibold text-[#000000]" data-max-chars="30"><span class="text-[#2388FF]">1.</span> Start from Scratch</h3>
+                        </div>
+                    </div>
+                    <!-- Method Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] overflow-hidden" data-zone="bullet-item">
+                        <div class="w-full overflow-hidden bg-[#F5F5F5] flex items-center justify-center min-h-[180px]">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/44/92e7c0bf01.png" alt="Paste Outline" class="w-full h-auto object-contain block">
+                        </div>
+                        <div class="p-5">
+                            <!-- Title -->
+                            <h3 class="text-2xl font-semibold text-[#000000]" data-max-chars="30"><span class="text-[#2388FF]">2.</span> Paste Outline</h3>
+                        </div>
+                    </div>
+                    <!-- Method Card 3 -->
+                    <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] overflow-hidden" data-zone="bullet-item">
+                        <div class="w-full overflow-hidden bg-[#F5F5F5] flex items-center justify-center min-h-[180px]">
+                            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/d2/3152fd846a.png" alt="Upload Files" class="w-full h-auto object-contain block">
+                        </div>
+                        <div class="p-5">
+                            <!-- Title -->
+                            <h3 class="text-2xl font-semibold text-[#000000]" data-max-chars="30"><span class="text-[#2388FF]">3.</span> Upload Files</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta content="width=1280, initial-scale=1.0" name="viewport">
+    <title>2025 SynergyCloud Pre-A Funding Pitch Deck - Multi Chart Content</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        .font-outfit {
+            font-family: Outfit, 'PingFang SC', sans-serif;
+        }
+
+        .font-inter {
+            font-family: Inter, 'PingFang SC', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-[#F3F5F7] font-inter">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#f3f5f7]">
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none z-0">
+            <!-- 底部装饰线 -->
+            <div class="absolute bottom-[22px] left-0 w-full h-1 bg-[#dcdadb]/20"></div>
+        </div>
+
+        <!-- 内容容器 -->
+        <div class="relative z-10 flex flex-col w-full h-full p-[60px]">
+
+            <!-- 标题区域 -->
+            <header class="flex flex-col gap-4">
+                <h1 class="text-[#292f3b] text-[42px] font-semibold font-outfit leading-tight">
+                    Funding Plan: Fueling the Growth Engine
+                </h1>
+                <div class="w-16 h-1 bg-[#475afe]"></div>
+            </header>
+
+            <!-- 主内容区域 -->
+            <main class="flex-1 flex gap-12 items-center py-8">
+
+                <!-- 左侧图表区域 -->
+                <div class="flex-1 flex flex-col justify-center">
+                    <!-- 图表容器 -->
+                    <div class="relative w-full h-[320px]">
+                        <canvas id="brandChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- 右侧列表区域 -->
+                <div class="w-[490px] flex-shrink-0 flex items-center">
+                    <div class="bg-white rounded-xl shadow-sm p-8">
+                        <ul class="flex flex-col gap-8">
+                            <!-- Heytea -->
+                            <li class="flex gap-4 items-start">
+                                <div class="w-3 h-3 flex-shrink-0 mt-2.5 bg-gradient-to-b from-[#323947] to-[rgba(50,57,71,0.3)] rounded-full">
+                                </div>
+
+                                <p class="flex-1 text-[#1a1a1a] text-lg font-normal leading-tight">
+                                    <strong class="font-bold"><span class="text-[#475afe]">Product R&amp;D</span> (40%): </strong>Drive continuous product innovation, deepen our technical moat, and enhance user experience.
+                                </p>
+                            </li>
+
+                            <!-- Guming -->
+                            <li class="flex gap-4 items-start">
+                                <div class="w-3 h-3 flex-shrink-0 mt-2.5 bg-gradient-to-b from-[#475afe] to-[rgba(71,90,254,0.3)] rounded-full">
+                                </div>
+                                <p class="flex-1 text-[#1a1a1a] text-lg font-normal leading-tight">
+                                    <strong class="font-bold"><span class="text-[#475afe]">Sales &amp; Marketing</span> (35%): </strong>Expand market outreach to acquire more high-quality users and boost brand visibility.
+                                </p>
+                            </li>
+
+                            <!-- Mixue Ice City -->
+                            <li class="flex gap-4 items-start">
+                                <div class="w-3 h-3 flex-shrink-0 mt-2.5 bg-[#9ca3af] rounded-full"></div>
+                                <p class="flex-1 text-[#1a1a1a] text-lg font-normal leading-tight">
+                                    <strong class="font-bold"><span class="text-[#475afe]">Team Building</span> (25%): </strong>15% for the customer success team and 10% for recruiting top industry talent.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+            <!-- 页脚 -->
+            <footer class="flex justify-between items-center pt-[17px] w-full">
+                <p id="footer" class="text-gray-400 text-base font-light font-outfit">
+                    SynergyCloud Pre-A Funding Pitch Deck
+                </p>
+                <!-- 页码 -->
+                <p id="page-number" class="text-gray-400 text-base font-light font-outfit">5</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        // 等待页面加载完成
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('brandChart').getContext('2d');
+
+            // 创建渐变色
+            const gradient1 = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient1.addColorStop(0, '#9ca3af'); // Mixue Ice City - 灰色
+            gradient1.addColorStop(1, 'rgba(156,163,175,0.3)');
+
+            const gradient2 = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient2.addColorStop(0, '#323947'); // Guming - 深灰色
+            gradient2.addColorStop(1, 'rgba(50,57,71,0.3)');
+
+            const gradient3 = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient3.addColorStop(0, '#475afe'); // Heytea - 蓝色
+            gradient3.addColorStop(1, 'rgba(71,90,254,0.3)');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['R&D', 'Marketing', 'Team'],
+                    datasets: [{
+                        label: 'Average Price (Yuan)',
+                        data: [40, 35, 25],
+                        backgroundColor: [gradient1, gradient2, gradient3],
+                        barPercentage: 0.6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            align: 'start',
+                            text: 'Seeking $3M for 15% Equity',
+                            color: '#000',
+                            font: {
+                                family: 'Outfit',
+                                size: 24,
+                                weight: '600'
+                            },
+                            padding: {
+                                bottom: 40,
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.parsed.y + ' Yuan';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false,
+                            },
+                            border: {
+                                display: true,
+                                color: '#DCDADB',
+                            },
+                            ticks: {
+                                color: '#A3A3A3',
+                                font: {
+                                    family: 'Inter',
+                                    size: 14
+                                }
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                drawTicks: false,
+                                color: '#DCDADB',
+                            },
+                            border: {
+                                dash: (ctx) => ctx.tick.value === 0 ? [] : [4, 7],
+                                width: 0,
+                            },
+                            ticks: {
+                                color: '#A3A3A3',
+                                font: {
+                                    family: 'Inter',
+                                    size: 14
+                                },
+                                stepSize: 1000,
+                                callback: function (value) {
+                                    if (value === 0) return '0';
+                                    if (value >= 1000) return (value / 1000) + 'k';
+                                    return value;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

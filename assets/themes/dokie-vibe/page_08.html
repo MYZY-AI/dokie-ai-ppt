@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Start from Scratch (Part 2)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Yellow Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/f6/546f06a2ba.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#000000] bg-white px-3 py-1 rounded-full shadow-md">How to Start</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-[#000000]" data-zone="page-number">07</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="40"><span class="brand-font">Start from Scratch</span> (Part 2)</h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="60">Once your draft is ready, refine it through <span class="brand-font">Chat</span></p>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center justify-center">
+                    <div class="relative w-[750px] h-[480px]" data-zone="body">
+                        <div class="relative w-full h-full">
+                            <!-- Decorative Element: Flow Lines -->
+                            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 750 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 150 240 Q 375 10, 600 240" stroke="#CCCCCC" stroke-width="2.5" fill="none" stroke-dasharray="12 8"/>
+                                <path d="M 600 240 Q 375 470, 150 240" stroke="#CCCCCC" stroke-width="2.5" fill="none" stroke-dasharray="12 8"/>
+                                <path d="M 365 115 L 385 125 L 365 135" stroke="#2388FF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M 385 345 L 365 355 L 385 365" stroke="#2388FF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <!-- Process Step 1 -->
+                            <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[230px] z-10">
+                                <div class="bg-white rounded-[999px] shadow-lg p-5 text-center">
+                                    <div class="w-14 h-14 bg-[#E3F2FF] rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="ph ph-eye text-[28px] text-[#2388FF]"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-[#000000]">Review Slides</h3>
+                                </div>
+                            </div>
+                            <!-- Process Center -->
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] bg-[#2388FF] rounded-full flex items-center justify-center shadow-lg z-20">
+                                <p class="text-center text-white font-bold text-base leading-tight px-3"><span class="brand-font">Iterate<br>Until<br>Perfect</span></p>
+                            </div>
+                            <!-- Process Step 2 -->
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[230px] z-10">
+                                <div class="bg-white rounded-[999px] shadow-lg p-5 text-center">
+                                    <div class="w-14 h-14 bg-[#E3F2FF] rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="ph ph-chat-circle-dots text-[28px] text-[#2388FF]"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-[#000000]">Chat to Refine</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

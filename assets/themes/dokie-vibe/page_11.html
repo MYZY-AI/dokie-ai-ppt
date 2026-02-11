@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Pro Tip: Add Pages to Chat for Editing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Purple Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/1c/92c943b2b2.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#9A5EFF] bg-white px-3 py-1 rounded-full shadow-md">Chat Editing</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">10</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="40">
+                    <span class="brand-font">Pro Tip</span>:<br>Add Pages to Chat for Editing
+                </h1>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center gap-8">
+                    <div class="w-1/2 flex flex-col justify-center">
+                        <div class="space-y-6" data-zone="body" data-max-chars="200">
+                            <div class="bg-[#E3F2FF] rounded-2xl p-5 shadow-md border border-[#2388FF]/20">
+                                <p class="text-lg text-[#000000] leading-relaxed">
+                                    Use <span class="font-semibold text-[#2388FF] brand-font">"Add to chat"</span> to reference and edit multiple pages at once.
+                                </p>
+                            </div>
+                            <div>
+                                <!-- Subtitle -->
+                                <h3 class="text-xl font-semibold text-[#000000] brand-font mb-4">What You Can Do:</h3>
+                                <div class="space-y-3" data-zone="bullet-list" data-max-items="4">
+                                    <!-- Capability 1 -->
+                                    <div class="flex gap-3" data-zone="bullet-item">
+                                        <div class="w-9 h-9 bg-[#E3F2FF] rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-edit text-base text-[#2388FF]"></i>
+                                        </div>
+                                        <p class="self-center text-base text-[#666666] leading-relaxed flex-1" data-max-chars="40">Edit specific pages with targeted changes</p>
+                                    </div>
+                                    <!-- Capability 2 -->
+                                    <div class="flex gap-3" data-zone="bullet-item">
+                                        <div class="w-9 h-9 bg-[#E3F2FF] rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-layer-group text-base text-[#2388FF]"></i>
+                                        </div>
+                                        <p class="self-center text-base text-[#666666] leading-relaxed flex-1" data-max-chars="40">Merge content from multiple pages</p>
+                                    </div>
+                                    <!-- Capability 3 -->
+                                    <div class="flex gap-3" data-zone="bullet-item">
+                                        <div class="w-9 h-9 bg-[#E3F2FF] rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-arrows-alt text-base text-[#2388FF]"></i>
+                                        </div>
+                                        <p class="self-center text-base text-[#666666] leading-relaxed flex-1" data-max-chars="40">Rearrange page order efficiently</p>
+                                    </div>
+                                    <!-- Capability 4 -->
+                                    <div class="flex gap-3" data-zone="bullet-item">
+                                        <div class="w-9 h-9 bg-[#E3F2FF] rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-magic text-base text-[#2388FF]"></i>
+                                        </div>
+                                        <p class="self-center text-base text-[#666666] leading-relaxed flex-1" data-max-chars="40">Apply batch style changes across pages</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 flex flex-col justify-center items-center">
+                        <!-- Screenshot -->
+                        <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6 inline-block">
+                            <div class="w-[480px] h-[333px] rounded-lg overflow-hidden flex items-center justify-center">
+                                <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/db/e001dc79e3.png" alt="Add to chat" class="w-full h-full object-cover block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

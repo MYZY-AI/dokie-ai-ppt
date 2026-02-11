@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Table of Contents</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+        .brand-font-bold {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#FAF9D5]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#FAF9D5]">
+        
+        <!-- Content -->
+        <div class="relative z-10 flex-grow flex items-center px-[80px] py-[60px] gap-12" data-role="content">
+            <!-- Header -->
+            <div class="flex-shrink-0 w-[320px]">
+                <!-- Title -->
+                <h1 class="brand-font-bold text-7xl text-[#2C2C2C] leading-tight" data-zone="title" data-max-chars="30">Table of<br>Contents</h1>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="flex-1 flex items-center justify-center">
+                <div class="grid grid-cols-3 gap-x-4 gap-y-12 w-full max-w-[720px]" data-zone="bullet-list" data-max-items="6">
+                    <!-- Navigation Item 1 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#2388FF]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">What is<br>Dokie</h3>
+                    </div>
+                    
+                    <!-- Navigation Item 2 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#0FB981]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">Core<br>Advantages</h3>
+                    </div>
+                    
+                    <!-- Navigation Item 3 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#F7D158]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">How to<br>Start</h3>
+                    </div>
+                    
+                    <!-- Navigation Item 4 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#9A5EFF]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">Chat<br>Editing</h3>
+                    </div>
+                    
+                    <!-- Navigation Item 5 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#FFB3CC]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">Quick<br>Editing</h3>
+                    </div>
+                    
+                    <!-- Navigation Item 6 -->
+                    <div class="flex flex-col items-center gap-4 group" data-zone="bullet-item">
+                        <i class="fas fa-folder text-8xl text-[#9CA3AF]"></i>
+                        <h3 class="text-lg font-semibold text-[#2C2C2C] text-center leading-tight" data-max-chars="20">Export &<br>Share</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

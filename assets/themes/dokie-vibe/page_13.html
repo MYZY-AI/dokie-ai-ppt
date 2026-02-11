@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1280, initial-scale=1.0" name="viewport" />
+    <title>Quick Editing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/dist/index.global.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Figtree', sans-serif;
+        }
+        .brand-font {
+            font-family: 'Averia Serif Libre', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#F9F9F9]">
+    <div class="slide-container relative flex flex-col w-[1280px] h-[720px] max-w-[1280px] max-h-[720px] aspect-[16/9] overflow-hidden bg-[#F9F9F9]">
+        
+        <!-- Decorative Element: Pink Accent Shape (Top Right) -->
+        <div class="absolute top-0 right-0 z-0 w-1/2" data-role="decor">
+            <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/8d/811eb393d9.svg" alt="" class="w-full h-auto object-contain block">
+        </div>
+        
+        <!-- Category Label and Page Number (Top Right) -->
+        <div class="absolute top-[20px] right-[60px] z-20 flex items-center gap-3">
+            <span class="text-sm font-semibold text-[#FFB3CC] bg-white px-3 py-1 rounded-full shadow-md">Quick Editing</span>
+            <!-- Page Number -->
+            <span id="page-number" class="text-xl font-semibold text-white" data-zone="page-number">12</span>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col flex-grow p-[60px]" data-role="content">
+            <!-- Header -->
+            <header class="flex-shrink-0 pb-4">
+                <!-- Title -->
+                <h1 class="text-5xl font-semibold text-[#000000] max-w-[670px]" data-zone="title" data-max-chars="20">
+                    <span class="brand-font">Quick Editing</span>
+                </h1>
+                <!-- Subtitle -->
+                <p class="text-lg text-[#666666] leading-relaxed mt-4" data-zone="subtitle" data-max-chars="80">Edit text and images instantly — <span class="font-semibold text-[#2388FF]">No chat needed!</span> <span class="font-semibold text-[#2388FF]">Try it out!</span></p>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-grow flex flex-col justify-center min-h-0">
+                <div class="flex items-center gap-10">
+                    <div class="w-[40%] flex flex-col justify-center">
+                        <div class="space-y-8" data-zone="bullet-list" data-max-items="3">
+                            <!-- Feature 1 -->
+                            <div class="flex items-start gap-4" data-zone="bullet-item">
+                                <div class="w-12 h-12 flex-shrink-0 bg-[#E3F2FF] rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-font text-xl text-[#2388FF]"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <!-- Title -->
+                                    <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="20">Text Editing</h3>
+                                    <!-- Description -->
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">Directly select and edit text content</p>
+                                </div>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="flex items-start gap-4" data-zone="bullet-item">
+                                <div class="w-12 h-12 flex-shrink-0 bg-[#E3F2FF] rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-image text-xl text-[#2388FF]"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <!-- Title -->
+                                    <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="20">Image Management</h3>
+                                    <!-- Description -->
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">Replace or adjust images with one click</p>
+                                </div>
+                            </div>
+                            <!-- Feature 3 -->
+                            <div class="flex items-start gap-4" data-zone="bullet-item">
+                                <div class="w-12 h-12 flex-shrink-0 bg-[#E3F2FF] rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-bolt text-xl text-[#2388FF]"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <!-- Title -->
+                                    <h3 class="text-xl font-semibold text-[#000000] mb-1" data-max-chars="20"><span class="brand-font">Instant</span> Updates</h3>
+                                    <!-- Description -->
+                                    <p class="text-base text-[#666666] leading-relaxed" data-max-chars="40">No need to rebuild, preview effects in real-time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[60%] flex flex-col justify-center items-center">
+                        <!-- Screenshot -->
+                        <div class="bg-white rounded-2xl shadow-md border border-[#E0E0E0] p-6 inline-block">
+                            <div class="w-[520px] h-[360px] rounded-lg overflow-hidden flex items-center justify-center bg-[#FAF9F6]">
+                                <img src="https://ai-ppt-1311181695.cos.na-siliconvalley.myqcloud.com/user_10001/project_4107/d2/46b42e0731.png" alt="Dokie Right Panel" class="w-full h-full object-contain block">
+                            </div>
+                        </div>
+                        <!-- Caption -->
+                        <p class="text-base text-[#666666] leading-relaxed text-center mt-4 max-w-[520px]" data-max-chars="40">Preview. Fast edits right from the panel.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
