@@ -21,10 +21,12 @@ npx dokie-cli themes    # Verify CLI is available
 
 ## Workflow
 
+**⚠️ IMPORTANT: This is an interactive, step-by-step workflow. At each step, you MUST read the referenced rule files before doing the work. Present your result to the user and wait for their response before moving to the next step. Do NOT rush through multiple steps in one response.**
+
 ### New Project
 
 ```
-Collect requirements → Select theme → Generate outline → User confirmation → Generate HTML → Preview
+Collect requirements → User confirms → Select theme → User confirms → Generate outline → User confirms → Generate HTML → Preview → User feedback
 ```
 
 ### Modify Project

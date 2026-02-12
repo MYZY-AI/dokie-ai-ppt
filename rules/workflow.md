@@ -1,5 +1,10 @@
 # Workflow
 
+**Important**: This is an interactive workflow. At each step:
+1. **Read the referenced rule files** before doing the work — don't skip them
+2. **Present your result** to the user and wait for their response before moving on
+3. If anything is unclear or ambiguous, ask the user rather than guessing
+
 ## New Project
 
 ### Step 1: Collect Requirements
@@ -25,7 +30,7 @@ Understand user intent and collect the following key information:
 - Extensive content with clear structure → Set according to structure
 - Extensive content without clear structure → Estimate by content density, one topic per page
 
-Present to user for confirmation after collection, then proceed to the next step.
+Present all collected info to user for confirmation. Wait for user to confirm or adjust before moving to the next step.
 
 ### Step 2: Select Theme
 
@@ -35,23 +40,27 @@ Get available theme list:
 npx dokie-cli themes
 ```
 
-After user selects, get theme templates:
+Present the theme list to the user and let them choose. After user selects, get theme templates:
 
 ```bash
 npx dokie-cli theme <name|id> --json
 ```
 
+Present the selected theme details to the user. Wait for user to confirm the theme before moving on.
+
 See [theme.md](theme.md) for theme style extraction methods.
 
 ### Step 3: Generate Outline
 
+**Before generating the outline, read [outline.md](outline.md)** for the outline format specifications.
+
 Generate outline based on requirements and theme. Each page includes Content (content elements) and Design (layout suggestions).
 
-Present outline to user for confirmation before proceeding to the next step.
-
-See [outline.md](outline.md) for outline format specifications.
+Present the complete outline to the user for review. The user may want to adjust content, page order, or structure — wait for their approval before generating any HTML.
 
 ### Step 4: Generate Slides
+
+**Before generating slides, read [theme.md](theme.md) and [slide-html.md](slide-html.md)** to ensure theme consistency and HTML specs compliance.
 
 Create project directory and generate HTML files:
 
@@ -81,7 +90,11 @@ After generation is complete, immediately open preview:
 npx dokie-cli preview ./my-project/
 ```
 
-After preview launches, check for common issues per [quality-check.md](quality-check.md) (content overflow, chart rendering, etc.). If issues are found, fix them and prompt user to refresh.
+**Before checking quality, read [quality-check.md](quality-check.md)** for the checklist.
+
+After preview launches, check for common issues (content overflow, chart rendering, etc.). If issues are found, fix them and prompt user to refresh.
+
+Wait for user feedback on the preview — the user may request changes.
 
 ---
 
