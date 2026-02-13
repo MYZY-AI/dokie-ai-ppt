@@ -90,6 +90,10 @@ After generation is complete, immediately open preview:
 npx dokie-cli preview ./my-project/
 ```
 
+The preview server will return two URLs — present **both** to the user:
+- **Local**: `http://localhost:xxxx` — for local access
+- **Public**: `https://xxx.trycloudflare.com` — shareable public link
+
 **Before checking quality, read [quality-check.md](quality-check.md)** for the checklist.
 
 After preview launches, check for common issues (content overflow, chart rendering, etc.). If issues are found, fix them and prompt user to refresh.
@@ -122,7 +126,7 @@ See [modify-scenarios.md](modify-scenarios.md) for handling various modification
 2. If referencing other page styles, read the corresponding files first
 3. Write back after modification
 
-Prompt preview when done:
+Prompt preview when done (present both Local and Public URLs to the user):
 
 ```bash
 npx dokie-cli preview ./my-project/
