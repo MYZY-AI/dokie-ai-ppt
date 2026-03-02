@@ -10,7 +10,11 @@
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#see-it-in-action">See It in Action</a> · <a href="#go-further-with-dokie">Go Further</a>
+  <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#see-it-in-action">See It in Action</a> · <a href="#go-further-with-dokie">Go Further with Dokie</a>
+</p>
+
+<p align="center">
+  Works with Claude Code, Cursor, Codex, and 35+ AI agents — any agent that supports the <a href="https://github.com/nicepkg/skills">open skills</a> ecosystem.
 </p>
 
 ---
@@ -109,10 +113,12 @@ Every slide comes alive with GSAP-powered animations. Choose the intensity that 
 - **Creative** — Bold cinematic sequences with scroll-triggered effects, parallax layers, and dynamic transitions. Designed for keynotes, pitches, and presentations that need to impress. Think Awwwards-level motion design.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/85a9a3a3-5054-48b4-826f-209e3456e0f9" width="680" />
+  <a href="https://www.dokie.ai/presentation/share/azVPjJDBaPgM">
+    <img src="https://github.com/user-attachments/assets/85a9a3a3-5054-48b4-826f-209e3456e0f9" width="680" />
+  </a>
 </p>
 <p align="center">
-  <em>Creative animation style — cinematic entrance effects with layered transitions</em>
+  <em>Creative animation style — cinematic entrance effects with layered transitions. <a href="https://www.dokie.ai/presentation/share/azVPjJDBaPgM">Click to view live demo →</a></em>
 </p>
 
 ### Auto Quality Check
@@ -156,33 +162,6 @@ From AI generation to pixel-perfect polish — all in one workflow.
 <p align="center">
   <em>Left: Fine-tune every detail in the Dokie editor &nbsp;·&nbsp; Right: Export to PDF, PPTX and more</em>
 </p>
-
----
-
-## How It Works
-
-```
-  "Make a pitch deck for my startup"
-                 ↓
-  ┌──────────────────────────────────────────┐
-  │  1. Collect requirements                 │
-  │     topic, audience, pages, style        │
-  │                 ↓                        │
-  │  2. Select theme                         │
-  │     25+ built-in themes                  │
-  │                 ↓                        │
-  │  3. Generate outline                     │
-  │     content + layout per page            │
-  │                 ↓                        │
-  │  4. Generate HTML slides                 │
-  │     fully styled, theme-consistent       │
-  │                 ↓                        │
-  │  5. Preview                              │
-  │     local + public shareable link        │
-  └──────────────────────────────────────────┘
-```
-
-Every step pauses for your confirmation — adjust anything before moving on.
 
 ---
 
