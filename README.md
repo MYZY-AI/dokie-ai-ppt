@@ -109,7 +109,7 @@ Every slide comes alive with GSAP-powered animations. Choose the intensity that 
 - **Creative** — Bold cinematic sequences with scroll-triggered effects, parallax layers, and dynamic transitions. Designed for keynotes, pitches, and presentations that need to impress. Think Awwwards-level motion design.
 
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/anime.gif" width="680" />
+  <img src="https://github.com/user-attachments/assets/85a9a3a3-5054-48b4-826f-209e3456e0f9" width="680" />
 </p>
 <p align="center">
   <em>Creative animation style — cinematic entrance effects with layered transitions</em>
