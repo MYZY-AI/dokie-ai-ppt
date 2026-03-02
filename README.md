@@ -1,70 +1,109 @@
 <p align="center">
-  <img src="./Logo%20Mark%20Cricle.png" alt="Dokie" width="120" />
+  <img src="./Logo%20Mark%20Cricle.png" alt="Dokie" width="100" />
 </p>
 
 <h1 align="center">Dokie AI PPT Skill</h1>
 
 <p align="center">
-  Professional AI presentation generation skill by <a href="https://dokie.ai">dokie.ai</a><br/>
-  Create stunning HTML slides through conversation — from minimal business style to Awwwards-level creative motion.
+  AI presentation generator by <a href="https://dokie.ai">dokie.ai</a><br/>
+  Talk to your agent, get professional HTML slides.
 </p>
 
-Built on web technologies (Tailwind CSS, Chart.js, GSAP, Font Awesome), far beyond what traditional PPT can deliver.
+---
 
-## Install
+## Quick Start
 
 ```bash
 npx skills add MYZY-AI/dokie-ai-ppt
 ```
 
-Install to a specific agent:
+Then just ask your agent:
+
+> "Make a quarterly report presentation"
+
+That's it. The skill handles requirements, theme, outline, generation, and preview — step by step.
+
+<details>
+<summary>Install to a specific agent</summary>
 
 ```bash
 npx skills add MYZY-AI/dokie-ai-ppt -a claude-code
 npx skills add MYZY-AI/dokie-ai-ppt -a cursor
 ```
 
-## Usage
+</details>
 
-Once installed, simply ask your agent to create a presentation:
-
-- "Make a quarterly report presentation"
-- "Create a pitch deck for my startup"
-- "Build a product launch presentation with creative animations"
-
-The skill will guide the agent through:
-
-1. **Collect requirements** — topic, audience, page count, style, animation preference
-2. **Select theme** — 25+ themes across business, tech, education, creative, and medical categories
-3. **Generate outline** — structured content with layout suggestions per page
-4. **Generate HTML slides** — fully styled, theme-consistent HTML files
-5. **Preview** — local preview via `npx dokie-cli preview`
-
-## Prerequisites
+<details>
+<summary>Prerequisites</summary>
 
 ```bash
 npx dokie-cli themes    # Verify Dokie CLI is available
 ```
 
-## Features
+</details>
 
-- **25+ Themes** — Business, tech, education, creative, medical styles + 3 local built-in themes
-- **Theme Customization** — Change colors, fonts, decorations, or create variants
-- **6 Chart Types** — Bar/Line/Pie/Radar/Bubble (Chart.js), Pyramid, Funnel, Timeline, Flowchart, Quadrant
-- **3 Animation Styles** — Minimal, Balanced, Creative (GSAP-powered)
-- **Quality Checks** — Content completeness, overflow detection, theme consistency
-- **Modification Scenarios** — Insert, delete, split, merge, restyle, reorder pages
+---
 
-## Specs
+## What Makes It Different
 
-| Item | Value |
-|------|-------|
-| Resolution | 1280 × 720 |
-| Charts | Chart.js 4.5 |
-| Icons | Font Awesome 6.5 |
-| Animation | GSAP 3.12 |
-| CSS | Tailwind CSS 4.1 |
+### 25+ Themes
 
-## License
+Business, tech, education, creative, medical — pick a style or customize your own.
 
-MIT
+<p align="center">
+  <img src="IMAGE_URL_THEMES" alt="Theme examples" width="680" />
+</p>
+
+### Charts & Data Visualization
+
+Bar, line, pie, radar, bubble, pyramid, funnel, timeline, flowchart, quadrant — all rendered live in HTML.
+
+<p align="center">
+  <img src="IMAGE_URL_CHARTS" alt="Chart examples" width="680" />
+</p>
+
+### 3 Animation Styles
+
+From subtle entrance effects to cinematic motion, powered by GSAP.
+
+| Style | Feel |
+|-------|------|
+| Minimal | Clean fade & slide, no distraction |
+| Balanced | Moderate motion, professional |
+| Creative | Bold sequences, cinematic |
+
+<p align="center">
+  <video src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202026-03-02%20173709.mp4" width="680" controls></video>
+</p>
+
+### Auto Quality Check
+
+Content overflow, chart rendering, theme consistency — checked automatically after generation.
+
+---
+
+## See It in Action
+
+<p align="center">
+  <img src="IMAGE_URL_HERO" alt="Dokie AI PPT Demo" width="680" />
+</p>
+
+---
+
+## How It Works
+
+```
+You: "Make a pitch deck for my startup"
+
+  1. Collect requirements ── topic, audience, pages, style, animation
+  2. Select theme ────────── 25+ themes, preview & confirm
+  3. Generate outline ────── structured content + layout per page
+  4. Generate HTML slides ── fully styled, theme-consistent files
+  5. Preview ─────────────── local + public shareable link
+```
+
+---
+
+<p align="center">
+  <a href="https://dokie.ai">dokie.ai</a> · License: MIT
+</p>
