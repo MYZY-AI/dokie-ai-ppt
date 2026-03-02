@@ -1,3 +1,7 @@
+<p align="right">
+  <a href="README_CN.md">中文</a> | English
+</p>
+
 <p align="center">
   <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/Logo%20Mark%20Cricle.png" alt="Dokie" width="100" />
 </p>
