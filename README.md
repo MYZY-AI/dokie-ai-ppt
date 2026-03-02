@@ -51,16 +51,21 @@ npx dokie-cli themes    # Verify Dokie CLI is available
 Business, tech, education, creative, medical — pick a style or customize your own.
 
 <p align="center">
-  <img src="IMAGE_URL_THEMES" alt="Theme examples" width="680" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/dokietheme.png" alt="Dokie Theme" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/market.png" alt="Market Theme" width="330" />
+</p>
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/medi.png" alt="Medical Theme" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/qinghua.png" alt="Qinghua Theme" width="330" />
+</p>
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/trends.png" alt="Trends Theme" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/yellow.png" alt="Yellow Theme" width="330" />
 </p>
 
 ### Charts & Data Visualization
 
 Bar, line, pie, radar, bubble, pyramid, funnel, timeline, flowchart, quadrant — all rendered live in HTML.
-
-<p align="center">
-  <img src="IMAGE_URL_CHARTS" alt="Chart examples" width="680" />
-</p>
 
 ### 3 Animation Styles
 
@@ -73,7 +78,7 @@ From subtle entrance effects to cinematic motion, powered by GSAP.
 | Creative | Bold sequences, cinematic |
 
 <p align="center">
-  <video src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202026-03-02%20173709.mp4" width="680" controls></video>
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202026-03-02%20173655.gif" alt="Animation demo" width="680" />
 </p>
 
 ### Auto Quality Check
@@ -84,8 +89,21 @@ Content overflow, chart rendering, theme consistency — checked automatically a
 
 ## See It in Action
 
+Preview your slides instantly — local + public shareable link.
+
 <p align="center">
-  <img src="IMAGE_URL_HERO" alt="Dokie AI PPT Demo" width="680" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" alt="Dokie AI PPT Preview" width="680" />
+</p>
+
+---
+
+## Take It Further with Dokie
+
+Want more control? Jump to [dokie.ai](https://dokie.ai) for free — fine-tune every detail and export to PDF, PPTX, and more.
+
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/edit.png" alt="Dokie Online Editor" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/editdaochu.png" alt="Dokie Export" width="330" />
 </p>
 
 ---
