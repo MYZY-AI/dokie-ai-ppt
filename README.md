@@ -5,26 +5,36 @@
 <h1 align="center">Dokie AI PPT Skill</h1>
 
 <p align="center">
-  AI presentation generator by <a href="https://dokie.ai">dokie.ai</a><br/>
-  Talk to your agent, get professional HTML slides.
+  Talk to your AI agent, get professional HTML slides.<br/>
+  Built by <a href="https://dokie.ai">dokie.ai</a>
+</p>
+
+<p align="center">
+  <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#see-it-in-action">See It in Action</a> · <a href="#go-further-with-dokie">Go Further</a>
 </p>
 
 ---
 
 ## Quick Start
 
+**Install the skill:**
+
 ```bash
 npx skills add MYZY-AI/dokie-ai-ppt
 ```
 
-Then just ask your agent:
+**Ask your agent to create a presentation:**
 
-> "Make a quarterly report presentation"
+```
+"Make a quarterly report presentation"
+"Create a pitch deck for my startup"
+"Build a product launch presentation with creative animations"
+```
 
-That's it. The skill handles requirements, theme, outline, generation, and preview — step by step.
+The skill walks you through each step — collect requirements, pick a theme, review the outline, generate slides, and preview. You stay in control at every step.
 
 <details>
-<summary>Install to a specific agent</summary>
+<summary>Specify an agent</summary>
 
 ```bash
 npx skills add MYZY-AI/dokie-ai-ppt -a claude-code
@@ -44,66 +54,107 @@ npx dokie-cli themes    # Verify Dokie CLI is available
 
 ---
 
-## What Makes It Different
+## Features
 
 ### 25+ Themes
 
-Business, tech, education, creative, medical — pick a style or customize your own.
+From business to medical, tech to creative — choose a built-in theme or customize colors, fonts, and decorations to match your brand. Every theme comes with a complete style system including typography, color palette, backgrounds, and decorative elements.
 
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/dokietheme.png" alt="Dokie Theme" width="330" />
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/market.png" alt="Market Theme" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/dokietheme.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/market.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/medi.png" width="260" />
 </p>
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/medi.png" alt="Medical Theme" width="330" />
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/qinghua.png" alt="Qinghua Theme" width="330" />
+  <em>Left: Dokie brand theme &nbsp;·&nbsp; Center: Market analysis theme &nbsp;·&nbsp; Right: Medical professional theme</em>
+</p>
+
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/qinghua.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/trends.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/yellow.png" width="260" />
 </p>
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/trends.png" alt="Trends Theme" width="330" />
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/yellow.png" alt="Yellow Theme" width="330" />
+  <em>Left: Chinese porcelain style &nbsp;·&nbsp; Center: Trends & data theme &nbsp;·&nbsp; Right: Warm creative theme</em>
 </p>
 
-### Charts & Data Visualization
+### 10+ Chart Types
 
-Bar, line, pie, radar, bubble, pyramid, funnel, timeline, flowchart, quadrant — all rendered live in HTML.
+Bar, line, pie, radar, bubble, pyramid, funnel, timeline, flowchart, quadrant — all rendered live in HTML with Chart.js. No static images, no screenshots — real interactive charts embedded directly in your slides. Data updates? Just change the numbers and refresh.
+
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/005.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/006.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/007.png" width="260" />
+</p>
+<p align="center">
+  <em>Bar · Line · Doughnut &nbsp;|&nbsp; Radar · Bubble &nbsp;|&nbsp; Funnel · Pyramid</em>
+</p>
+<p align="center">
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/008.png" width="260" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/009.png" width="260" />
+</p>
+<p align="center">
+  <em>Timeline · Quadrant &nbsp;|&nbsp; Flowchart · Cycle Diagram</em>
+</p>
 
 ### 3 Animation Styles
 
-From subtle entrance effects to cinematic motion, powered by GSAP.
+Every slide comes alive with GSAP-powered animations. Choose the intensity that matches your presentation:
 
-| Style | Feel |
-|-------|------|
-| Minimal | Clean fade & slide, no distraction |
-| Balanced | Moderate motion, professional |
-| Creative | Bold sequences, cinematic |
+- **Minimal** — Subtle fade and slide transitions. Clean and professional, perfect for corporate and business presentations where content speaks for itself.
+
+- **Balanced** — Moderate entrance effects with staggered timing. Adds visual rhythm without overwhelming the audience. Great for product demos and team meetings.
+
+- **Creative** — Bold cinematic sequences with scroll-triggered effects, parallax layers, and dynamic transitions. Designed for keynotes, pitches, and presentations that need to impress. Think Awwwards-level motion design.
 
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202026-03-02%20173655.gif" alt="Animation demo" width="680" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/anime.gif" width="680" />
+</p>
+<p align="center">
+  <em>Creative animation style — cinematic entrance effects with layered transitions</em>
 </p>
 
 ### Auto Quality Check
 
-Content overflow, chart rendering, theme consistency — checked automatically after generation.
+After generation, the skill automatically reviews every slide for:
+- **Content overflow** — text or elements bleeding outside the slide boundaries
+- **Chart rendering** — ensuring all data visualizations display correctly
+- **Theme consistency** — verifying fonts, colors, and spacing match the selected theme
+
+Issues are fixed before you even notice them. You get polished results from the first preview.
 
 ---
 
 ## See It in Action
 
-Preview your slides instantly — local + public shareable link.
+Generated slides are previewed instantly. The preview server gives you two links — a local one for yourself and a public one you can share with anyone.
 
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" alt="Dokie AI PPT Preview" width="680" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" width="680" />
+</p>
+<p align="center">
+  <em>Built-in preview — browse all slides, check layouts, share with your team via public link</em>
 </p>
 
 ---
 
-## Take It Further with Dokie
+## Go Further with Dokie
 
-Want more control? Jump to [dokie.ai](https://dokie.ai) for free — fine-tune every detail and export to PDF, PPTX, and more.
+Want more control? Every presentation you generate can be opened in [dokie.ai](https://dokie.ai) for free. Inside the Dokie editor, you can:
+
+- Fine-tune layouts, text, and visual details with a drag-and-drop editor
+- Adjust styles, colors, and fonts at a granular level
+- Export to **PDF**, **PPTX**, **images**, and more
+
+From AI generation to pixel-perfect polish — all in one workflow.
 
 <p align="center">
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/edit.png" alt="Dokie Online Editor" width="330" />
-  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/editdaochu.png" alt="Dokie Export" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/edit.png" width="330" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/editdaochu.png" width="330" />
+</p>
+<p align="center">
+  <em>Left: Fine-tune every detail in the Dokie editor &nbsp;·&nbsp; Right: Export to PDF, PPTX and more</em>
 </p>
 
 ---
@@ -111,17 +162,30 @@ Want more control? Jump to [dokie.ai](https://dokie.ai) for free — fine-tune e
 ## How It Works
 
 ```
-You: "Make a pitch deck for my startup"
-
-  1. Collect requirements ── topic, audience, pages, style, animation
-  2. Select theme ────────── 25+ themes, preview & confirm
-  3. Generate outline ────── structured content + layout per page
-  4. Generate HTML slides ── fully styled, theme-consistent files
-  5. Preview ─────────────── local + public shareable link
+  "Make a pitch deck for my startup"
+                 ↓
+  ┌──────────────────────────────────────────┐
+  │  1. Collect requirements                 │
+  │     topic, audience, pages, style        │
+  │                 ↓                        │
+  │  2. Select theme                         │
+  │     25+ built-in themes                  │
+  │                 ↓                        │
+  │  3. Generate outline                     │
+  │     content + layout per page            │
+  │                 ↓                        │
+  │  4. Generate HTML slides                 │
+  │     fully styled, theme-consistent       │
+  │                 ↓                        │
+  │  5. Preview                              │
+  │     local + public shareable link        │
+  └──────────────────────────────────────────┘
 ```
+
+Every step pauses for your confirmation — adjust anything before moving on.
 
 ---
 
 <p align="center">
-  <a href="https://dokie.ai">dokie.ai</a> · License: MIT
+  <a href="https://dokie.ai">dokie.ai</a> · MIT License
 </p>
