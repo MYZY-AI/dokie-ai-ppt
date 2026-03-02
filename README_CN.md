@@ -158,7 +158,7 @@ npx dokie-cli themes    # 验证 Dokie CLI 是否可用
     ➜  Public:  https://your-presentation.trycloudflare.com
 ```
 
-把公网链接发给你的团队、客户或任何人 — 他们可以直接在浏览器中查看你的演示文稿，无需安装任何东西。
+公网链接可以快速分享给任何人预览，无需安装。如果需要长期有效的分享链接，可以将演示文稿上传到 [dokie.ai](https://dokie.ai)，获取稳定的分享地址。
 
 <p align="center">
   <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" width="680" />

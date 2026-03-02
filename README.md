@@ -158,7 +158,7 @@ Generated slides are previewed instantly. The preview server gives you two links
     ➜  Public:  https://your-presentation.trycloudflare.com
 ```
 
-Send the public link to your team, your client, or anyone — they can view your presentation directly in the browser, no install needed.
+Send the public link to anyone for a quick preview — no install needed. For a permanent shareable link, open your presentation in [dokie.ai](https://dokie.ai) to get a stable URL that won't expire.
 
 <p align="center">
   <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" width="680" />
