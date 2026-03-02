@@ -14,6 +14,10 @@
 </p>
 
 <p align="center">
+  The most powerful AI presentation skill available today. Not just static slides — fully interactive HTML presentations with entrance animations, page transitions, clickable elements, live charts, and even 3D models. Built on web technologies (Tailwind CSS, Chart.js, GSAP, Font Awesome), far beyond what traditional PPT tools can deliver.
+</p>
+
+<p align="center">
   <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#see-it-in-action">See It in Action</a> · <a href="#go-further-with-dokie">Go Further with Dokie</a>
 </p>
 
@@ -106,15 +110,22 @@ Bar, line, pie, radar, bubble, pyramid, funnel, timeline, flowchart, quadrant �
   <em>Timeline · Quadrant &nbsp;|&nbsp; Flowchart · Cycle Diagram</em>
 </p>
 
-### 3 Animation Styles
+### Animations & Interactions
 
-Every slide comes alive with GSAP-powered animations. Choose the intensity that matches your presentation:
+This isn't your typical "fade-in" presentation tool. Every slide is a real web page, which means you get the full power of web animations and interactions:
 
-- **Minimal** — Subtle fade and slide transitions. Clean and professional, perfect for corporate and business presentations where content speaks for itself.
+- **Entrance animations** — Elements fly in, fade up, scale, rotate, blur — each with precise timing and easing curves
+- **Page transitions** — Smooth slide-to-slide transitions with cinematic flow
+- **Interactive elements** — Clickable tabs, hover effects, expandable sections — your audience can explore, not just watch
+- **Scroll-triggered effects** — Content reveals as you scroll, creating a storytelling rhythm
+- **Parallax & layered motion** — Depth and dimension that flat slides can't achieve
+- **3D models & advanced visuals** — Embed 3D objects, particle effects, and more — the browser is your canvas
 
-- **Balanced** — Moderate entrance effects with staggered timing. Adds visual rhythm without overwhelming the audience. Great for product demos and team meetings.
+Choose from 3 intensity levels:
 
-- **Creative** — Bold cinematic sequences with scroll-triggered effects, parallax layers, and dynamic transitions. Designed for keynotes, pitches, and presentations that need to impress. Think Awwwards-level motion design.
+- **Minimal** — Subtle fade and slide. Clean and professional, perfect for corporate settings where content speaks for itself.
+- **Balanced** — Moderate motion with staggered timing. Adds visual rhythm without distraction. Great for product demos and team meetings.
+- **Creative** — Full cinematic experience. Scroll-triggered reveals, parallax layers, dynamic transitions. Built for keynotes and pitches that need to impress. Awwwards-level motion design.
 
 <p align="center">
   <a href="https://www.dokie.ai/presentation/share/azVPjJDBaPgM">
@@ -138,7 +149,16 @@ Issues are fixed before you even notice them. You get polished results from the 
 
 ## See It in Action
 
-Generated slides are previewed instantly. The preview server gives you two links — a local one for yourself and a public one you can share with anyone.
+Generated slides are previewed instantly. The preview server gives you two links — a local one for yourself and a public one you can share with anyone:
+
+```
+✓ Server running:
+
+    ➜  Local:   http://localhost:3456
+    ➜  Public:  https://your-presentation.trycloudflare.com
+```
+
+Send the public link to your team, your client, or anyone — they can view your presentation directly in the browser, no install needed.
 
 <p align="center">
   <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/preview.jpg" width="680" />
