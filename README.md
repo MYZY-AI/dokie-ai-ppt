@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Logo%20Mark%20Cricle.png" alt="Dokie" width="100" />
+  <img src="https://skill-1317512395.cos.ap-singapore.myqcloud.com/Logo%20Mark%20Cricle.png" alt="Dokie" width="100" />
 </p>
 
 <h1 align="center">Dokie AI PPT Skill</h1>
