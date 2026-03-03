@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  Works with Claude Code, Cursor, Codex, and 35+ AI agents.
+  Works with Claude Code, Cursor, Codex, and 35+ AI agents — any agent that supports the open skills ecosystem.
 </p>
 
 ---

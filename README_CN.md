@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  支持 Claude Code、Cursor、Codex 等 35+ AI 智能体。
+  支持 Claude Code、Cursor、Codex 等 35+ AI 智能体 — 任何兼容 open skills 生态的智能体均可使用。
 </p>
 
 ---
