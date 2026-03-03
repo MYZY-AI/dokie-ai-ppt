@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  Works with Claude Code, Cursor, Codex, and 35+ AI agents — any agent that supports the <a href="https://github.com/nicepkg/skills">open skills</a> ecosystem.
+  Works with Claude Code, Cursor, Codex, and 35+ AI agents.
 </p>
 
 ---
